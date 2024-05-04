@@ -1,0 +1,503 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+body {
+    background-color: #004643;
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header" 130px
+    "Box-side" 500px
+    "content" 210px
+    "footer" 100px/450px;
+}
+
+
+/*Nav*/
+
+nav {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;   
+}
+
+.Box-Nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Logo img{
+    width: 200px;
+    border-radius: 150px;
+}
+
+.Contacto a{
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #abd1c6;
+}
+
+/* Menu */
+
+section {
+    grid-area: Box-side;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Box-Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 470px;
+    border-radius: 40px;
+    gap: 15px;    
+}
+ 
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+    gap: 10px;
+}
+
+.Menu li {
+    list-style: none;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #abd1c6;
+    cursor: pointer;
+}
+
+.Foto img {
+    width: 150px;
+    height: 190px;
+    border-radius: 100px;
+     
+}
+
+.Links-Sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+    gap: 15px;
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Iconos {
+    width: 40px;
+}
+
+/*Contenido*/
+
+aside {
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 75px;
+    gap: 20px;
+
+}
+
+h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: #fffffe;
+    font-size: 2.5rem;
+}
+
+
+
+p {
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+    text-align: justify;
+}
+
+
+/*Pie de pagina*/
+
+footer {
+    grid-area: footer;
+}
+
+.Pie-De-Pagina {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #e16162;
+    width: 100%;
+    height: 100px;
+}
+
+.Pie-De-Pagina p {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+/* tablet*/
+
+@media (min-width:768px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 200px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+      
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px; 
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    /*Contenido*/
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Mi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 75px;
+        gap: 20px;
+
+    }
+
+    h2 {
+        font-family: "Libre Franklin", sans-serif;
+        color: #fffffe;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        text-align: justify;
+    }
+
+        /* Pie de pagina */
+    
+    footer {
+        grid-area: footer;
+    }
+        
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+        
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+}
+
+/*Desktop*/
+
+@media (min-width:1024px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 100px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+      
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px;
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: max-content;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    /*Contenido*/
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Mi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 15px 75px;
+        gap: 20px;
+
+    }
+
+    h2 {
+        font-family: "Libre Franklin", sans-serif;
+        color: #fffffe;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        text-align: justify;
+    }
+
+        /* Pie de pagina */
+    
+    footer {
+        grid-area: footer;
+    }
+        
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+        
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+}

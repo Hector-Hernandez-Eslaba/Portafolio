@@ -1,0 +1,629 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #004643;
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header" 130px
+    "Box-side" 500px
+    "content" 210px
+    "footer" 100px/450px;
+}
+
+/*Nav*/
+
+nav {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Box-Nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Logo img{
+    width: 200px;
+    border-radius: 150px;
+}
+
+.Contacto a{
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #abd1c6;
+}
+
+/* Menu */
+
+section {
+    grid-area: Box-side;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box-Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 470px;
+    border-radius: 40px;
+    gap: 25px;   
+}
+ 
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+    gap: 10px;
+}
+
+.Menu li {
+    list-style: none;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #abd1c6;
+    cursor: pointer;
+}
+
+.Foto img {
+    width: 150px;
+    height: 190px;
+    border-radius: 100px;
+     
+}
+
+.Links-Sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+    gap: 15px;
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Iconos {
+    width: 40px;
+}
+
+/*Contenido*/
+
+aside {
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.Texto-2 h2 {
+    font-family: "Libre Franklin", sans-serif;
+    color: #fffffe;
+    font-size: 2rem;
+}
+
+.Skills-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.Skills-2 img{
+    width: 40px;
+}
+
+.Relleno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background-color: #001e1d;
+    width: 120px;
+    height: 80px;
+    gap: 15px;
+}
+
+#Mikrotik {
+    width: 70px;
+}
+
+#Mimosa {
+    width: 70px;
+}
+
+
+.Ubiquiti img {
+    width: 70px;
+}
+
+.Ubiquiti p {
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+}
+
+.Relleno p {
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+}
+
+/*Pie de pagina*/
+
+footer {
+    grid-area: footer;
+}
+
+.Pie-De-Pagina {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #e16162;
+    width: 100%;
+    height: 100px;
+}
+
+.Pie-De-Pagina p {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+/*Tablet*/
+
+@media (min-width:768px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 200px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+      
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px; 
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    /*Contenido*/
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Skills {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 500px;
+        height: 50%;
+    }
+
+    .Texto-2 h2 {
+        font-family: "Libre Franklin", sans-serif;
+        color: #fffffe;
+        font-size: 2rem;
+    }
+
+    .Skills-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Skills-2 img{
+        width: 40px;
+    }
+
+    .Relleno {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        border: none;
+        background-color: #001e1d;
+        width: 150px;
+        height: 80px;
+        gap: 15px;
+    }
+
+    #Mikrotik {
+        width: 70px;
+    }
+
+    #Mimosa {
+        width: 70px;
+    }
+
+
+    .Ubiquiti img {
+        width: 70px;
+    }
+
+    .Ubiquiti p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+    }
+
+    .Relleno p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+    }
+
+    /*Pie de pagina*/
+
+    footer {
+        grid-area: footer;
+    }
+
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+}
+
+
+@media (min-width:1024px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 100px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px; 
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    /*Contenido*/
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Skills {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .Texto-2 h2 {
+        font-family: "Libre Franklin", sans-serif;
+        color: #fffffe;
+        font-size: 2rem;
+    }
+
+    .Skills-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Skills-2 img{
+        width: 70px;
+    }
+
+    .Relleno {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        border: none;
+        background-color: #001e1d;
+        width: 200px;
+        height: 110px;
+        gap: 15px;
+    }
+
+    #Mikrotik {
+        width: 170px;
+    }
+
+    #Mimosa {
+        width: 170px;
+        padding: 10px;
+    }
+
+    .Ubiquiti p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+    }
+
+    .Relleno p {
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+    }
+
+    /*Pie de pagina*/
+
+    footer {
+        grid-area: footer;
+    }
+
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+}

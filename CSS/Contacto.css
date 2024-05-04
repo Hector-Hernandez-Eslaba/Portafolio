@@ -1,0 +1,771 @@
+*{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #004643;
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header" 130px
+    "Box-side" 500px
+    "content" 510px
+    "footer" 100px/450px;
+}
+
+/* Nav */
+nav {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Box-Nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.Logo img{
+    width: 200px;
+    border-radius: 150px;
+}
+
+.Contacto a{
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #abd1c6;
+}
+
+
+/* Menu */
+
+section {
+    grid-area: Box-side;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box-Links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 470px;
+    border-radius: 40px;
+    gap: 25px;   
+}
+ 
+.Menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+    gap: 10px;
+}
+
+.Menu li {
+    list-style: none;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #abd1c6;
+    cursor: pointer;
+}
+
+.Foto img {
+    width: 150px;
+    height: 190px;
+    border-radius: 100px;
+     
+}
+
+.Links-Sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+    color: #abd1c6;
+    gap: 15px;
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.Iconos {
+    width: 40px;
+}
+
+aside {
+    grid-area: content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Box-Imagen {
+    display: none;
+    width: 35%;
+    height: 400px;
+}
+
+.Box-Imagen img {
+    background-color: #e16162;
+    border-radius: 600px;
+    height: 450px;
+    width: 500px;
+}
+
+.Formulario {
+    position: relative;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    color: #abd1c6;
+    width: 300px;
+    height: 56px;
+    left: 22%;
+}
+
+.Box-All {
+    position: relative;
+    width: 65%;
+    height: 490px;
+}
+
+
+.Form-2 {   
+    position: relative;
+    left: 20%;
+    width: 296px;
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+
+.Form input{
+    background-color: #e8e4e6;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: none;
+       
+}
+
+.Form .Label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+      
+}
+
+
+.Form .Span {
+    position: absolute;
+    background-color: #e8e4e6;
+    border-radius: 15px;
+    width: 70px;
+    height: 20px;
+    bottom: 0px;
+    top: 4px;
+    left: 10px;
+    transition: all 0.3s ease;
+    color: #001e1d;
+    
+}
+
+
+.Asunto {
+    bottom: 0px;
+    top: 20px;
+    left: 10px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.Form-2 textarea {
+    resize: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    
+}
+
+form input:focus + .Label .Span,form input:valid + .Label .Span {
+    transform:translateY(-50%) ;
+    font-size: 14px;
+    color: #001e1d;
+}
+
+
+.Form-2 .Enviar {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #f9bc60;
+    color: #001e1d;
+    margin: 10px 0 0 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.Pie-De-Pagina {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #e16162;
+    width: 100%;
+    height: 100px;
+}
+
+.Pie-De-Pagina p {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+@media (min-width:768px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 200px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+      
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px; 
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Box-Imagen {
+        display: none;
+        width: 35%;
+        height: 400px;
+    }
+    
+    .Box-Imagen img {
+        background-color: #e16162;
+        border-radius: 600px;
+        height: 450px;
+        width: 500px;
+    }
+    
+    .Formulario {
+        position: relative;
+        text-align: center;
+        font-family: "Karla", sans-serif;
+        font-size: 14px;
+        color: #abd1c6;
+        width: 300px;
+        height: 56px;
+        left: 22%;
+    }
+    
+    .Box-All {
+        position: relative;
+        width: 65%;
+        height: 490px;
+    }
+    
+    
+    .Form-2 {   
+        position: relative;
+        left: 20%;
+        width: 296px;
+        height: 50px;
+        margin: 10px 0 0 0;
+    }
+    
+    .Form input{
+        width: 100%;
+        height: 100%;
+        background-color: #e8e4e6;
+        text-align: start;
+        padding: 0 10px;
+        border-radius: 15px;
+        border: none;
+           
+    }
+    
+    .Form .Label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+          
+    }
+    
+    
+    .Form .Span {
+        position: absolute;
+        background-color: #e8e4e6;
+        border-radius: 5px;
+        border: none;
+        width: 70px;
+        height: 20px;
+        bottom: 0px;
+        top: 10px;
+        left: 10px;
+        transition: all 0.3s ease;
+        color: #001e1d;;
+        
+    }
+    
+    
+    .Asunto {
+        bottom: 0px;
+        top: 20px;
+        left: 10px;
+        transition: all 0.3s ease;
+        color: black;
+    }
+    
+    .Form-2 textarea {
+        resize: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        
+    }
+    
+    form input:focus + .Label .Span,form input:valid + .Label .Span {
+        transform:translateY(-90%) ;
+        font-size: 14px;
+        color: #f9bc60;
+    }
+    
+    
+    .Form-2 .Enviar {
+        position: relative;
+        width: 120px;
+        height: 40px;
+        background-color: #f9bc60;
+        color: #001e1d;
+        margin: 10px 0 0 0;
+        border-radius: 0;
+        cursor: pointer;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+}
+
+@media (min-width:1024px) {
+    
+    body {
+        background-color: #004643;
+        display: grid;
+        height: 100vh;
+        grid-template:
+        "header header" 100px 
+        "Box-side content" 490px
+        "footer footer" 100px/30% 1fr;
+    }
+
+    
+    nav {
+        grid-area: header;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Box-Nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;        
+    }
+    
+    .Logo img{
+        width: 200px;
+        border-radius: 150px;
+        margin: 25px;
+    }
+    
+    .Contacto a{
+        font-family: "Karla", sans-serif;
+        text-decoration: none;
+        color: #abd1c6;
+        margin: 25px;
+    }
+
+    /* Menu */
+
+    section {
+        grid-area: Box-side;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+    .Box-Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 400px;
+        height: 470px;
+        border-radius: 40px;
+        gap: 25px; 
+    }
+    
+    .Foto img {
+        width: 150px;
+        height: 190px;
+        border-radius: 100px;     
+    }
+    
+    .Menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Karla", sans-serif;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .Menu li {
+        list-style: none;
+    }
+    
+    .Menu a {
+        text-decoration: none;
+        color: #abd1c6;
+        cursor: pointer;
+    }
+    
+    .Links-Sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-family: "Karla", sans-serif;
+        color: #abd1c6;
+        gap: 15px;
+    }
+    
+    .Item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        gap: 5px;
+        cursor: pointer;
+    }
+    
+    .Iconos {
+        width: 40px;
+    }
+
+    aside {
+        grid-area: content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Box-Imagen {
+        display: block;
+        width: 35%;
+        height: 400px;
+    }
+    
+    .Box-Imagen img {
+        background-color: #e16162;
+        border-radius: 600px;
+        height: 400px;
+        width: 450px;
+    }
+    
+    .Formulario {
+        position: relative;
+        text-align: center;
+        font-family: "Karla", sans-serif;
+        font-size: 14px;
+        color: #abd1c6;
+        width: 300px;
+        height: 56px;
+        left: 22%;
+    }
+    
+    .Box-All {
+        position: relative;
+        width: 65%;
+        height: 490px;
+    }
+    
+    
+    .Form-2 {   
+        position: relative;
+        left: 20%;
+        width: 296px;
+        height: 50px;
+        margin: 10px 0 0 0;
+    }
+    
+    .Form input{
+        width: 100%;
+        height: 100%;
+        background-color: #e8e4e6;
+        text-align: start;
+        padding: 0 10px;
+        border-radius: 15px;
+        border: none;
+           
+    }
+    
+    .Form .Label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+          
+    }
+    
+    
+    .Form .Span {
+        position: absolute;
+        background-color: #e8e4e6;
+        border-radius: 5px;
+        border: none;
+        width: 70px;
+        height: 20px;
+        bottom: 0px;
+        top: 10px;
+        left: 10px;
+        transition: all 0.3s ease;
+        color: #001e1d;
+        
+    }
+    
+    
+    .Asunto {
+        bottom: 0px;
+        top: 20px;
+        left: 10px;
+        transition: all 0.3s ease;
+        color: black;
+    }
+    
+    .Form-2 textarea {
+        resize: none;
+        border-radius: 10px;
+        padding: 10px 10px;
+        
+    }
+    
+    form input:focus + .Label .Span,form input:valid + .Label .Span {
+        transform:translateY(-90%) ;
+        font-size: 14px;
+        color: #001e1d;
+    }
+    
+    
+    .Form-2 .Enviar {
+        position: relative;
+        width: 120px;
+        height: 40px;
+        background-color: #f9bc60;
+        color: #001e1d;
+        margin: 10px 0 0 0;
+        border-radius: 0;
+        cursor: pointer;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    .Pie-De-Pagina {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e16162;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .Pie-De-Pagina p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+    }
+
+}
