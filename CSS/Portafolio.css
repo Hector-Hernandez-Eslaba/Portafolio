@@ -117,6 +117,9 @@ section {
 
 aside {
     grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Desp {
@@ -129,6 +132,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    witdh: 70%;
     gap: 10px;
 }
 .Description h1 {
