@@ -125,15 +125,21 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     gap: 30px;
+}
+
+.Exp-Laboral img {
+    position: relative;
+    left: 30px;
+    width: 150px;
 }
 
 .texto-5 p {
     font-family: "Libre Franklin", sans-serif;
     color: #fffffe;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .Exp-Laboral p {
