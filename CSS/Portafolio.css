@@ -132,7 +132,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    witdh: 70%;
+    width: 70%;
     gap: 10px;
 }
 .Description h1 {
