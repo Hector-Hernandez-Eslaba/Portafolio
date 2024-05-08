@@ -11,8 +11,8 @@ body {
     grid-template:
     "header" 130px
     "Box-side" 500px
-    "content" 210px
-    "footer" 100px/450px;
+    "content" 450px
+    "footer" 100px/300px;
 }
 
 
@@ -162,6 +162,7 @@ footer {
 }
 
 .Pie-De-Pagina p {
+    text-align: center;
     font-family: "Open Sans", sans-serif;
     color: black;
 }
