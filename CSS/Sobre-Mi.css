@@ -37,6 +37,7 @@ nav {
 .Logo img{
     width: 200px;
     border-radius: 150px;
+    margin: 10px;
 }
 
 .Contacto a{
