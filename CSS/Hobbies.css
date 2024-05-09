@@ -11,8 +11,8 @@ body {
     grid-template:
     "header" 130px
     "Box-side" 500px
-    "content" 210px
-    "footer" 100px/450px;
+    "content" 350px
+    "footer" 100px/430px;
 }
 
 /* Nav */
@@ -34,6 +34,7 @@ nav {
 .Logo img{
     width: 200px;
     border-radius: 150px;
+    margin: 10px;
 }
 
 .Contacto a{
